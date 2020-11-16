@@ -1,0 +1,13 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <h1>Hello Wilder !</h1>
+
+    {% for stock in stocks %}
+
+    <p>{{stock.name}}</p>
+    <p>{{stock.quantity}}</p>
+
+    {% endfor %}
+
+{% endblock %}
